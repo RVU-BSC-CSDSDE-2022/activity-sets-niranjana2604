@@ -13,9 +13,12 @@ float input()
 }
 float square_root(float n)
 {
-  
-  double sqrroot=sqrt(n);
-  return sqrroot;
+  float i = 4;
+  while(fabs(i*i-n) /2>0.0001)
+   {
+	i=(i+n/i)/2;
+   }
+  return i;
 }
 void output(float n ,float sqrroot)
 {
@@ -23,8 +26,8 @@ void output(float n ,float sqrroot)
 }
 int main()
 {
-  double n ,sqrroot;
-  n=input();
-  sqrroot=square_root(n);
-  output(n, sqrroot);
-}
+  float n , sqrroot;
+  n= input();
+  sqrroot = square_root(n);
+  output(n , sqrroot);
+  }
