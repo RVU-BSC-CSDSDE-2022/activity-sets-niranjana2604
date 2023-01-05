@@ -13,7 +13,7 @@ float input()
 }
 float square_root(float n)
 {
-  float i = 4;
+  float i = 2;
   while(fabs(i*i-n) /2>0.0001)
    {
 	i=(i+n/i)/2;

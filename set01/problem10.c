@@ -6,7 +6,7 @@ void output(char *string1, char *string2, int result);
 
 int main()
 {
-   char string1[100], string2[100];
+   char string1[100], string2[200];
    int result=0;
    input_two_strings(string1, string2);
     result=stringcompare(string1, string2);
@@ -48,16 +48,3 @@ if(flag==1)
      if(string1[i]>string2[i])
        return 1;
   else return 2;
-}
-  }
-
-void output(char *string1, char *string2, int result)
-{
-  if(result==0)
-    printf("The strings are  equal\n");
-  if(result==1)
-    printf("%s is greater\n", string1);
-  if(result==2)
-     printf("%s is greater\n", string2);
-  
-}
