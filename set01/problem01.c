@@ -1,8 +1,7 @@
-#include<stdio.h>
-void main()
+#include <stdio.h>
+int main()
 {
-  char name[10] = "Niranjana";
-
-  printf("%s", name);
-  // return 0;
+char name[10]="Niranjana";
+printf("%s",name);
+return 0;
 }
